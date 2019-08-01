@@ -1,3 +1,4 @@
 version: 1.0.{build}
+image: visual studio 2017
 build_script:
 - pwsh: dotnet build
