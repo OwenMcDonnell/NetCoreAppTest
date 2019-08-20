@@ -1,10 +1,6 @@
 version: 1.0.{build}
 image: visual studio 2017
-init: 
-  - ps: Set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem -Name LongPathsEnabled -Value 1
-  - git config --system core.longpaths true
-clone_script:
-  - git clone -c core.longpaths=true -q --branch=master https://github.com/OwenMcDonnell/NetCoreAppTest.git C:\projects\netcoreapptest
+
 install:
   #- ps: Set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem -Name LongPathsEnabled -Value 1
   #- git config --system core.longpaths true
